@@ -32,3 +32,11 @@ export const getCustomers = async (req, res) => {
     res.status(404).json({ message: error.mesage });
   }
 };
+
+export const getTransactions = async (req, res) => {
+  try {
+    res.status(200).json();
+  } catch (error) {
+    res.status(404).json({ message: error.mesage });
+  }
+};
